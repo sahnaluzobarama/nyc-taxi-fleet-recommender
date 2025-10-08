@@ -79,6 +79,15 @@ This project implements a comprehensive urban mobility analytics system for New 
      - System disruptions
    - Stores anomaly flags in PostMLGold
    - Note: Isolation Forest was tested but removed due to excessive false positives
+## Demo
+
+![Fleet Dashboard Interface](assets/fleet_dashboard_interface.png)
+
+| ![System Architecture](assets/system_architecture.png) | ![Pipeline Workflow](assets/pipeline_workflow.png) |
+|---|---|
+| ![Anomaly Detection](assets/anomaly_detection.png) | ![Zone 237 Predictions](assets/zone_237_predictions.png) |
+| ![Forecast Dashboard](assets/dashboard_forecast.png) | ![Geographic View (Medium)](assets/geographic_view_medium.png) |
+
 
 ## Technology Stack
 
@@ -268,4 +277,5 @@ PostMlGold.anomalies_{date}
 - Pipeline logs stored in GCS under `/logs/`
 - Each notebook generates timestamped log files
 - BigQuery audit logs track data lineage
+
 - Spark session management includes retry logic with quota handling
